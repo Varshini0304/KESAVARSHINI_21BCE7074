@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+}
+
+.playerA {
+    background-color: #ffcccc;
+}
+
+.playerB {
+    background-color: #ccccff;
+}
+
+#player-turn {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#move-history {
+    margin-top: 20px;
+    font-size: 14px;
+}
